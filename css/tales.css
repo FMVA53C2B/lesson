@@ -1,0 +1,105 @@
+
+.mv {
+    position: relative;
+    bottom: 450px;
+    width: 50%;
+}
+.txtimg {
+    width: 50%;
+    padding: 0;
+}
+.inner{
+    position: relative;
+    left: 750px;
+    bottom: 1300px;
+    width: 50%;
+    padding: 0px;
+    background-color: black;
+}
+#asobistoreCollectorsCol {
+    width: 50%;
+    float: left;
+}
+#ultimateCol {
+    width: 50%;
+    float: left;
+}
+.imgdisplay{
+    position: relative;
+    left: 520px;
+}
+.txt {
+    position: relative;
+    background-image: url("images/atomos.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    bottom: 600px;
+}
+section.normalCol {
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
+}
+#normalColInner{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+#packageCol {
+    margin: 0 auto;
+    width: 80%;
+}
+body {
+    background-color: red;
+}
+.text {
+    text-align: center;
+    margin: 0 auto;
+
+}
+.text-image {
+    display:inline-block;
+}
+
+.newsList {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+      white-space: wrap;
+      -webkit-overflow-scrolling: touch;
+      table-layout: fixed;
+
+
+}
+.box {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 90%;
+
+    /* 見た目調整 */
+    height: 400px;
+    margin: 16px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    background-color: rgb(10, 9, 9);
+}
+.box p {
+    color: blanchedalmond;
+}
+.img {
+    width: 450px;
+}
+
+
+.f-container-ul {
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    height: 750px;
+}
+section.character {
+    width: 70%;
+    margin: 0 auto;
+}

@@ -1,0 +1,162 @@
+.designate{
+    position: absolute;
+    z-index: -1;
+    width: 700px;
+    height: 700px;
+}
+.f-container-ul {
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    height: 750px;
+}
+section.character {
+    width: 80%;
+    margin: 0 auto;
+}
+.text {
+    text-align: center;
+    margin: 0 auto;
+
+}
+.text-image {
+    display:inline-block;
+}
+
+.newsList {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+      white-space: wrap;
+      -webkit-overflow-scrolling: touch;
+      table-layout: fixed;
+
+
+}
+.box {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 90%;
+
+    /* 見た目調整 */
+    height: 400px;
+    margin: 16px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    background-color: rgb(10, 9, 9);
+}
+.box p {
+    color: blanchedalmond;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    width: 100%;
+    position:relative;
+    padding:0 1.5em 0 0.5em;
+    border:1px solid #cccccc;
+    border-radius:0.5em;
+    max-width:100%;
+
+}
+.content ul {
+  white-space:nowrap;
+	overflow-x:hidden;
+	margin: 0 0.1em 0 1em;
+	scroll-behavior:smooth;
+	scroll-snap-type:inline;
+}
+.content.box {
+  display:inline-block;
+	margin:0 1em 0 0;
+	scroll-snap-align:center;
+  height: 400px;
+  margin: 16px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: rgb(10, 9, 9);
+}
+@media screen and (max-width:480px) {
+	.content ul {
+		overflow-x:auto;
+	}
+}
+.arrow {
+	display:inline-block;
+	position:relative;
+	border-radius:50%;
+	width:1em;
+	height:1em;
+	cursor:pointer;
+	border:1px solid #808080;
+	vertical-align:middle;
+	margin-bottom:4px;
+}
+.arrow:before {
+	content:'';
+	position:absolute;
+	width:0.4em;
+	height:0.4em;
+	border-left:1px solid #808080;
+	border-bottom:1px solid #808080;
+}
+.left:before {
+	top:28%;
+	left:35%;
+	transform:rotate(45deg);
+}
+.right:before {
+	top:28%;
+	left:20%;
+	transform:rotate(-135deg);
+}
+.arrow:hover {
+	background-color:#808080;
+}
+.arrow:hover:before {
+	border-color:white;
+}
+#feature {
+    max-width: 1240px;
+    padding: 100px 16px 50px 16px;
+    margin: -50px auto 10px auto;
+  }
+  /*
+  グリッドレイアウト
+  要素の最小サイズは300pxで、画面の幅にあわせて要素の幅が自動で変化する
+  repeatで全ての要素に対して適用
+  「gap: 26px;」で行と列の隙間を設定
+  */
+  #feature .grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #feature .grid .item {
+    transition: all  0.3s ease;
+    box-shadow: 0 0 8px 4px #ccc;
+  }
+  #feature .grid img {
+    vertical-align: top;
+  }
+  #feature .grid .item-content {
+    padding: 30px;
+  }
+  #feature .grid .item-cat {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+  }
+  #feature .grid .item-text {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  #feature .grid .item-date {
+    font-size: 0.75rem;
+    text-align: right;
+  }
+  
